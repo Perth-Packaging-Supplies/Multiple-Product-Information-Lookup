@@ -25,7 +25,7 @@ With this specific type of export in CSV, MYOB sometimes put "," in terms the fi
 7. Export All fields
 8. Press Next to export and save as "ITEM.txt" inside the input/sets folder of the program. (You may need to change the save as type to "All Files", and change the format name)
 
-## lookup.csv
+### Lookup Information (lookup.csv) [User-Made]
 1. Fill this with information about the item you need. The code can either be a supplier code or a product code, either way this will work.
 2. See the sample files under the input section
 
