@@ -9,8 +9,15 @@ LSP = 1.35
 GST = 1.1
 DECIMAL_PLACES = 3
 
-products = pd.read_csv("./input/products.csv")
-productLookup = pd.read_csv("./input/lookup.csv")
+try:
+    products = pd.read_csv("./input/sets/ITEM.txt",skip_blank_lines=True,skiprows=1,sep='\t', engine='python')
+except:
+    print("Issues reading ITEM.txt")
+
+try:
+    productLookup = pd.read_csv("./input/lookup.csv")
+except:
+    print("Issues reading lookup.csv")
 
 #FILTER DUPLICATE SUPPLIER NAME
 productLookup.drop_duplicates(subset="Code",inplace=True)
